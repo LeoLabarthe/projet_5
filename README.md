@@ -1,2 +1,2 @@
 # projet_5
-projet 5 openclassrooms
+This is my 5th project as part of my professional training with OpenClassRooms, in which the goal is to start learning using JavaScript
