@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const slides = [
+const slides = [
         {
             "image": "slide1.jpg",
             "tagLine": "Impressions tous formats <span>en boutique et en ligne</span>"
@@ -51,16 +50,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     leftArrow.addEventListener('click', () => {
         currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
-        console.log('Flèche gauche cliquée');
         updateBanner();
     });
 
     rightArrow.addEventListener('click', () => {
         currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
-        console.log('Flèche droite cliquée');
         updateBanner();
     });
 
     createDots();
     updateBanner();
-});
